@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú de navegación con submenús</title>
+  <style>
+    /* Estilos para el menú principal */
+    .navbar {
+      overflow: hidden;
+      background-color: black;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Estilos para los submenús */
+    .subnav {
+      float: left;
+      overflow: hidden;
+    }
+
+    .subnav .subnavbtn {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background-color: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .subnav:hover .subnavbtn {
+      background-color: #111;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .subnav-content a {
+      float: left;
+      color: black;
+      text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+      background-color: #eee;
+      color: black;
+    }
+
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Inicio</a>
+  <div class="subnav">
+    <button class="subnavbtn">Sobre mí</button>
+    <div class="subnav-content">
+      <a href="#">Sobre mí</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Red</button>
+    <div class="subnav-content">
+      <a href="#">Red</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Tema</button>
+    <div class="subnav-content">
+      <a href="#">Tema</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">FII</button>
+    <div class="subnav-content">
+      <a href="#">FII</a>
+      <a href="#">Detalle</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Contáctanos</button>
+    <div class="subnav-content">
+      <a href="#">Contáctanos</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
