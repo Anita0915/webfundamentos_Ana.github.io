@@ -135,10 +135,7 @@ form {
   border-radius: 5px;
   width: 30%;
   text-align: left;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 label {
